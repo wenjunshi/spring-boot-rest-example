@@ -1,10 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('sprtest') {
       steps {
-        sh '''
-/data/maven3/apache-maven-3.1.1/bin/mvn clean install'''
+        sh '''echo \'Start build\'
+/data/maven3/apache-maven-3.1.1/bin/mvn clean install
+
+echo \'OKOK!\''''
       }
     }
   }
